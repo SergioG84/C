@@ -102,7 +102,7 @@ int main ()
     /* 
     * put in the idiotproof code 
     */
-    if ((appetizer_item_code != no_item_code) &&
+if ((appetizer_item_code != no_item_code) &&
 (appetizer_item_code != spring_roll_code) &&
 (appetizer_item_code != beef_satay_code) &&
 (appetizer_item_code != pot_stickers_code)) {
@@ -153,12 +153,12 @@ exit(program_failure_code);
     /*
     * Ask them what starch item they want   
     */
-    if (entree_item_code != no_item_code) {
+if (entree_item_code != no_item_code) {
 printf("What starch would you like? Enter:\n");
-printf(" %d for no starch\n", no_item_code);
-printf(" %d for steamed rice\n", steamed_rice_code);
-printf(" %d for fried rice\n", fried_rice_code);
-printf(" %d for noodles\n", noodles_code);
+printf("%d for no starch\n", no_item_code);
+printf("%d for steamed rice\n", steamed_rice_code);
+printf("%d for fried rice\n", fried_rice_code);
+printf("%d for noodles\n", noodles_code);
 scanf("%d", &starch_item_code);
     /* 
     * put in the idiotproof code 
@@ -198,7 +198,7 @@ exit(program_failure_code);
     * Calculation Subsection *
     **************************
     */
-    if (entree_item_code == no_item_code) {
+if (entree_item_code == no_item_code) {
 entree_price = no_item_price;
 } /* if (entree_item_code == no_item_code) */
 else if (entree_item_code == beef_pho) {
@@ -276,7 +276,7 @@ grand_total =subtotal + total_tip + total_tax;
     * Output Subsection *
     *********************
     */
-    if (appetizer_item_code == spring_roll_code) {
+if (appetizer_item_code == spring_roll_code) {
 printf("Spring Roll: $%5.2f\n",
 spring_roll);
 }
@@ -355,7 +355,5 @@ printf("----------------------------------\n");
 printf("Grand Total: $%5.2f\n", grand_total);
 printf("Thanks for visiting Seth's Fusion!\n");
 printf("----------------------------------\n");
-
-
 
 }   /* main */
